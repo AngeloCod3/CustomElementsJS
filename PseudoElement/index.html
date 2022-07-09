@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+</head>
+<body style="background-color: rgb(111, 111, 111) ;">
+    <new-element >
+        <span slot="title"> Este es un nuevo titulo</span>
+        <span slot="p"> Este es un nuevo parrafo</span>
+    </new-element>
+
+    <style>
+    new-element{
+        --primary-color: rgba(0,0,0,0.2);
+    }
+        
+    </style>
+
+    <script src="main.js"></script>
+</body>
+</html>
