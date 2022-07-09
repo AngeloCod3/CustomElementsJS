@@ -10,7 +10,7 @@ getTemplate() {
     template.innerHTML = `
     <section>
     <h2>Bienvenido a mi pagina web</h2>
-    <div>
+    <div class='blue'>
     <p>Estoy muy contento de poder tener mi computadora nueva, aunque no es tan nueva porque es renewed pero sigue siendo nueva para mi y de verdad que va demasiado bien. Gracias querida laptop y bienvenida a la familia!!</p>
     </div>
 
@@ -25,7 +25,24 @@ getStyle() {
     return `
     <style>
     h2 {
+        color: black;
+    }
+
+    :host { 
+        display: inline-block;
+        background: grey;
+    }
+
+    :host(.blue) {
+        background-color: lightblue;
+    }
+
+    :host([red]) {
         color: red;
+    }
+
+    :host([red]) h2 {
+        color: lightblue;
     }
     </style>
     `

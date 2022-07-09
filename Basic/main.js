@@ -26,6 +26,10 @@ getStyle() {
     h2 {
         color: red;
     }
+
+    :host {
+        display: inline-block;
+    }
     </style>
     `
 }
